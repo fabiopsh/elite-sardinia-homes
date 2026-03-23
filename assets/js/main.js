@@ -71,21 +71,26 @@
   }
 
   /* ---------- Scroll reveal (IntersectionObserver) ---------- */
-  const revealEls = document.querySelectorAll('.reveal, .reveal-stagger');
+  // IMPORTANT: add classes FIRST, then observe — order matters
+  document.querySelectorAll('.section__header').forEach(function (el) { el.classList.add('reveal'); });
+  document.querySelectorAll('.about__grid').forEach(function (el) { el.classList.add('reveal'); });
+  document.querySelectorAll('.contact__grid').forEach(function (el) { el.classList.add('reveal'); });
+  // NOTE: properties grid is NOT added here — cards are injected dynamically by property.js
+
+  var revealEls = document.querySelectorAll('.reveal, .reveal-stagger');
 
   if ('IntersectionObserver' in window) {
-    const io = new IntersectionObserver(function (entries) {
+    var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
           io.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.12 });
+    }, { threshold: 0.10 });
 
     revealEls.forEach(function (el) { io.observe(el); });
   } else {
-    // Fallback: show all immediately
     revealEls.forEach(function (el) { el.classList.add('visible'); });
   }
 
@@ -177,19 +182,6 @@
     });
   });
 
-  /* ---------- Add reveal classes to key sections ---------- */
-  // Applied dynamically so the HTML stays clean
-  document.querySelectorAll('.section__header').forEach(function (el) {
-    el.classList.add('reveal');
-  });
-  document.querySelectorAll('.about__grid').forEach(function (el) {
-    el.classList.add('reveal');
-  });
-  document.querySelectorAll('.contact__grid').forEach(function (el) {
-    el.classList.add('reveal');
-  });
-  document.querySelectorAll('.properties__grid').forEach(function (el) {
-    el.classList.add('reveal-stagger');
-  });
+  // (reveal classes already added above, before IO setup)
 
 })();

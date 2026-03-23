@@ -9,11 +9,13 @@
 
   /* ---------- Render property cards ---------- */
   function renderCards() {
-    const grid = document.getElementById('properties-grid');
+    var grid = document.getElementById('properties-grid');
     if (!grid || typeof PROPERTIES === 'undefined') return;
 
-    PROPERTIES.forEach(function (p) {
-      const card = buildCard(p);
+    PROPERTIES.forEach(function (p, i) {
+      var card = buildCard(p);
+      card.style.animationDelay = (i * 0.12) + 's';
+      card.classList.add('card-fadein');
       grid.appendChild(card);
     });
   }
@@ -318,6 +320,7 @@
   }
 
   /* ---------- Init ---------- */
-  document.addEventListener('DOMContentLoaded', renderCards);
+  // Scripts are at bottom of <body>, DOM is already available — no need to wait
+  renderCards();
 
 })();
