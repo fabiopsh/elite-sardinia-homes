@@ -228,9 +228,16 @@ button {
 .navbar__logo img {
   height: 44px;
   width: auto;
-  transition: opacity var(--t-base);
+  transition: opacity var(--t-base), filter var(--t-base);
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.5));
 }
 .navbar__logo:hover img { opacity: .85; }
+
+/* Show icon-only on transparent state, full logo when scrolled */
+.navbar__logo .logo-full  { display: none; }
+.navbar__logo .logo-icon  { display: block; }
+.navbar.scrolled .navbar__logo .logo-full { display: block; }
+.navbar.scrolled .navbar__logo .logo-icon { display: none; }
 
 .navbar__links {
   display: flex;
@@ -809,8 +816,12 @@ button {
   align-items: stretch;
   justify-content: flex-end;
   pointer-events: none;
+  visibility: hidden;
 }
-.modal[aria-hidden="false"] { pointer-events: auto; }
+.modal[aria-hidden="false"] {
+  pointer-events: auto;
+  visibility: visible;
+}
 
 .modal__backdrop {
   position: absolute;
@@ -1093,8 +1104,12 @@ button {
   align-items: center;
   justify-content: center;
   pointer-events: none;
+  visibility: hidden;
 }
-.lightbox[aria-hidden="false"] { pointer-events: auto; }
+.lightbox[aria-hidden="false"] {
+  pointer-events: auto;
+  visibility: visible;
+}
 
 .lightbox__backdrop {
   position: absolute;
