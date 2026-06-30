@@ -33,7 +33,7 @@ const PROPERTIES = [
     featured: true,
 
     // ── NAMES & LOCATION ───────────────────────────────────
-    name: "Villa Via Ariosto",
+    name: "Attico Via Ariosto",
     subtitle: "Golfo Aranci, Gallura",
     location: {
       address: "Via Ariosto",
@@ -105,6 +105,6 @@ Una proprietà rara nel suo genere, ideale come residenza principale o dimora di
     ],
 
     // ── CONTACT PRE-FILL ───────────────────────────────────
-    contactSubject: "Richiesta informazioni — Villa Via Ariosto, Golfo Aranci",
+    contactSubject: "Richiesta informazioni — Attico Via Ariosto, Golfo Aranci",
   },
 ];

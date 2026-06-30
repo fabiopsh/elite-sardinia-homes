@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"C:/Users/fabio/Documents/Lavoro/elite-sardinia-homes/assets/css\")",
+      "Bash(mkdir -p \"C:/Users/fabio/Documents/Lavoro/elite-sardinia-homes/assets/js\")",
+      "Bash(mkdir -p \"C:/Users/fabio/Documents/Lavoro/elite-sardinia-homes/assets/images/logo\")",
+      "Bash(mkdir -p \"C:/Users/fabio/Documents/Lavoro/elite-sardinia-homes/assets/images/properties/via-ariosto\")",
+      "Bash(mkdir -p \"C:/Users/fabio/Documents/Lavoro/elite-sardinia-homes/assets/docs/via-ariosto\")",
+      "Bash(cp \"documenti/Elite Sardinia Homes/Elite-Sardinia-Homes-v2.png\" \"assets/images/logo/logo-full.png\")",
+      "Bash(cp \"documenti/Elite Sardinia Homes/Elite-Sardinia-Homes-v2goldsolologo.png\" \"assets/images/logo/logo-icon.png\")",
+      "Bash(cp \"documenti/Via Ariosto/Vista piscina.png\" \"assets/images/properties/via-ariosto/cover.png\")",
+      "Bash(cp \"documenti/Via Ariosto/Vista frontale-laterale dx.png\" \"assets/images/properties/via-ariosto/exterior-front.png\")",
+      "Bash(cp \"documenti/Via Ariosto/Vista laterale sx.png\" \"assets/images/properties/via-ariosto/exterior-side.png\")",
+      "Bash(cp \"documenti/Via Ariosto/CAPITOLATO VIA ARIOSTO .pdf\" \"assets/docs/via-ariosto/capitolato.pdf\")",
+      "Bash(cp \"documenti/Via Ariosto/PIANTA PIANO SECONDO.pdf\" \"assets/docs/via-ariosto/pianta-piano-secondo.pdf\")",
+      "Bash(cp \"documenti/Via Ariosto/PIANTA COPERTURA.pdf\" \"assets/docs/via-ariosto/pianta-copertura.pdf\")",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(where python:*)",
+      "Bash(where python3:*)",
+      "Bash(where node:*)",
+      "Bash(gh api:*)"
+    ]
+  }
+}
