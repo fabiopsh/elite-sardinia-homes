@@ -63,9 +63,9 @@ const PROPERTIES = [
 
     // ── DESCRIPTIONS ───────────────────────────────────────
     description: {
-      short: "Villa di pregio con piscina privata e vista panoramica sul mare di Golfo Aranci.",
+      short: "Attico di pregio con piscina privata e vista panoramica sul mare di Golfo Aranci.",
       long: `Elegante residenza situata in una delle zone più esclusive di Golfo Aranci, nel cuore della Gallura.
-La villa si sviluppa su tre livelli, incluso un piano interrato, e offre spazi generosi e rifiniti con materiali di alta qualità.
+L'Attico si sviluppa su tre livelli, incluso un piano interrato, e offre spazi generosi e rifiniti con materiali di alta qualità.
 All'esterno, una lussuosa piscina privata si affaccia su un giardino curato, con vista panoramica sul Golfo di Olbia e sull'Arcipelago della Maddalena.
 L'interno è caratterizzato da ambienti luminosi, finiture ricercate e una distribuzione degli spazi pensata per il comfort e la riservatezza.
 Una proprietà rara nel suo genere, ideale come residenza principale o dimora di vacanza di alto livello.`,
@@ -100,8 +100,8 @@ Una proprietà rara nel suo genere, ideale come residenza principale o dimora di
     // ── DOCUMENTS ──────────────────────────────────────────
     documents: [
       { label: "Pianta Piano Secondo", file: "assets/docs/via-ariosto/pianta-piano-secondo.pdf" },
-      { label: "Pianta Copertura",     file: "assets/docs/via-ariosto/pianta-copertura.pdf" },
-      { label: "Capitolato",           file: "assets/docs/via-ariosto/capitolato.pdf" },
+      { label: "Pianta Copertura", file: "assets/docs/via-ariosto/pianta-copertura.pdf" },
+      { label: "Capitolato", file: "assets/docs/via-ariosto/capitolato.pdf" },
     ],
 
     // ── CONTACT PRE-FILL ───────────────────────────────────
